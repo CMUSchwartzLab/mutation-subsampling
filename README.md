@@ -6,7 +6,7 @@
 ## Installation
 
   
-## Instructions for Generating Perfect Binary Phylogeny
+## Instructions for Generating Perfect Binary Phylogeny.
 ### Input
 - `-n` : number of leaves
 - `-m` : number of mutations
@@ -25,4 +25,27 @@
 python generate_perfect.py -n 3 -m 10 -t 90 -s 90 -o "perfect" 
 ```
 This will create two files named `perfect_tree.dot` and `perfect_matrix.dot`. 
+
+## Instructions for Generating K-Dollo Phylogeny from the Perfect Phylogeny. 
+### Input
+The first two arguments are for the perfect phylogeny cell (or clone) * mutation matrix and the perfect phylogeny in dot format. The remaining arguments are the following - 
+- `-k` : K for K-Dollo loss.
+- `--loss` : loss probability
+- `--mut-base` : 0/1 (whether mutations are 0 or 1 indexed)
+- `-A` : K-dollo helper matrix (K-dollo completion of B)
+- `-B` : K-dollo mutation matrix (this is the input for reconstructing K-Dollo phylogenies)
+- `--dot` : K-Dollo output tree in dot format
+  
+### Output
+- output.A: K-dollo helper matrix (K-dollo completion of B)
+- output.B: K-dollo mutation matrix (this is the input for reconstructing K-Dollo phylogenies)
+- output.dot: K-Dollo output tree in dot format
+
+### Instructions for Running
+
+```
+python generate_dollo_from_perfect.py perfect_matrix.tsv perfect_tree.dot -k 1 --loss 0.1 -s 90 --mut-base 0 -A onedollo.A -B onedollo.B --dot onedollo_tree.dot
+```
+
+
 
