@@ -47,5 +47,28 @@ The first two arguments are for the perfect phylogeny cell (or clone) * mutation
 python src/generate_dollo_from_perfect.py perfect_matrix.tsv perfect_tree.dot -k 1 --loss 0.1 -s 90 --mut-base 0 -A onedollo.A -B onedollo.B --dot onedollo_tree.dot
 ```
 
+## Instructions for Generating Coalescent Trees.
+
+We generate coalescent trees using [CellCoal](https://github.com/dapogon/cellcoal). The command for running the program we use is -
+
+```
+./cellcoal-1.2.0 -n10 \
+    -s"num_leaves" \
+    -l10000 \
+    -e100000 \
+    -g1.0e-05 \
+    -j3000 \
+    -k1 \
+    -i1 \
+    -b0 \
+    -c0 \
+    -C5 \
+    -u1.0e-07 \
+    -f0.3 0.2 0.2 0.3 \
+    -r0.00 0.03 0.12 0.04 0.11 0.00 0.02 0.68 0.68 0.02 0.00 0.11 0.04 0.12 0.03 0.00 \
+    -1 -2 -3 -4 -6 -v -x -W \
+    -o"output_directory" \
+    -#200011
+```
 
 
