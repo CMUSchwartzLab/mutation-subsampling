@@ -13,7 +13,8 @@
 - `-t` : random seed for tree generation
 - `-s` : random seed for mutation placement
 - `-o` : output_prefix
-- 
+
+  
 ### Outputs
 - output_prefix_tree.dot: dot format tree with mutations as edge labels
 - output_prefix_matrix.dot: mutation matrix of size (2n-1) * m, where n is number of leaves and m is number of mutations. 
