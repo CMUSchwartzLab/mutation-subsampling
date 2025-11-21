@@ -32,8 +32,8 @@ The first two arguments are for the perfect phylogeny cell (or clone) * mutation
 - `-k` : K for K-Dollo loss.
 - `--loss` : loss probability
 - `--mut-base` : 0/1 (whether mutations are 0 or 1 indexed)
-- `-A` : K-dollo helper matrix (K-dollo completion of B)
-- `-B` : K-dollo mutation matrix (this is the input for reconstructing K-Dollo phylogenies)
+- `-A` : K-dollo helper matrix file in tsv format (K-dollo completion of B)
+- `-B` : K-dollo mutation matrix file in tsv format (this is the input for reconstructing K-Dollo phylogenies)
 - `--dot` : K-Dollo output tree in dot format
   
 ### Output
