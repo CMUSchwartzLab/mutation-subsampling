@@ -70,5 +70,11 @@ We generate coalescent trees using [CellCoal](https://github.com/dapogon/cellcoa
     -o"output_directory" \
     -#200011
 ```
-
+Description of the parameters: 
+- `-n`: number of replicates
+- `-l` : total sites in the genome
+- `-e` : population size
+- `-g` : rate of mutation
+- `-j` : number of sampled site
+  
 
