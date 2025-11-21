@@ -1,5 +1,8 @@
 # Theoretical estimates on the expected number of mutations for reconstructing clonal lineage trees.
 
+<img width="1156" height="249" alt="image" src="https://github.com/user-attachments/assets/190a9fca-3708-4ab1-abe8-06a5ef78cf9e" />
+
+
 ## Installation
 
   
