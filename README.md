@@ -1,4 +1,4 @@
-# theoretical_bounds_on_mutation_subsampling
+# Theoretical estimates on the expected number of mutations for reconstructing clonal lineage trees.
 
 ## Installation
 
