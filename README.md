@@ -74,7 +74,16 @@ Description of the parameters:
 - `-n`: number of replicates
 - `-l` : total sites in the genome
 - `-e` : population size
-- `-g` : rate of mutation
+- `-g` : exponential growth rate
 - `-j` : number of sampled site
-  
-
+- `-k` : root branch length ratio
+- `i` : rate variation among branches
+- `b` : alphabet (0 for binary)
+- `c` : germline mutation rate
+- `C` : sequencing coverage
+- `u` : mutation rate per site per generation 
+- `f` : base frequencies
+- `r` : mutation matrix ACGT x ACGT
+-1 -2 -3 -4 -6 -v -x -W \
+- `o` : output_directory \
+- `#`: random seed
