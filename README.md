@@ -22,7 +22,7 @@
 
 ### Instructions for Running
 ```
-python generate_perfect.py -n 3 -m 10 -t 90 -s 90 -o "perfect" 
+python src/generate_perfect.py -n 3 -m 10 -t 90 -s 90 -o "perfect" 
 ```
 This will create two files named `perfect_tree.dot` and `perfect_matrix.dot`. 
 
@@ -44,7 +44,7 @@ The first two arguments are for the perfect phylogeny cell (or clone) * mutation
 ### Instructions for Running
 
 ```
-python generate_dollo_from_perfect.py perfect_matrix.tsv perfect_tree.dot -k 1 --loss 0.1 -s 90 --mut-base 0 -A onedollo.A -B onedollo.B --dot onedollo_tree.dot
+python src/generate_dollo_from_perfect.py perfect_matrix.tsv perfect_tree.dot -k 1 --loss 0.1 -s 90 --mut-base 0 -A onedollo.A -B onedollo.B --dot onedollo_tree.dot
 ```
 
 
