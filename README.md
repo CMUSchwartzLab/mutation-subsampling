@@ -4,7 +4,13 @@
 
 
 ## Installation
+The codes are written in Python 3. The required packages are -
+- numpy
+- pydot
+  
+We have provided a requirements.txt file for the required packages. 
 
+To install the benchmarking methods, we refer to the repositories of [SphyR](https://github.com/elkebir-group/SPhyR), [CellCoal](https://github.com/dapogon/cellcoal), and [PAUP](https://paup.phylosolutions.com/). 
   
 ## Instructions for Generating Perfect Binary Phylogeny.
 ### Input
